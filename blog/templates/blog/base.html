@@ -1,0 +1,18 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+ <title>{% block title %}{% endblock %}</title>
+ <link href="{% static 'css/blog.css' %}" rel="stylesheet">
+</head>
+<body>
+ <div id="content">
+ {% block content %}{% endblock %}
+ </div>
+ <div id="sidebar">
+ <h2>Классные либы для питухона</h2>
+  <p>Автор: Рамазанов Тимур</p>
+     <img width="350px" src="../../static/photos/meme.jpg">
+ </div>
+</body>
+</html>
